@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fence Jumpers Merch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="/Messenger_creation_AAE7378A-4A97-4B84-9751-FB2F31E451E8.jpeg" alt="Fence Jumpers Logo" class="logo">
+        <h1>Fence Jumpers Merch</h1>
+    </header>
+
+    <main>
+        <div id="products">
+            <div class="product-card" data-id="1" data-name="Fence Jumpers T-Shirt" data-price="40">
+                <img src="/FB_IMG_1751114178312.jpg" alt="Man wearing the Fence Jumpers T-Shirt">
+                <h2>Fence Jumpers T-Shirt</h2>
+                <p class="price">$40.00</p>
+                <div class="options">
+                    <label for="size-tshirt">Size:</label>
+                    <select id="size-tshirt" name="size">
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                    </select>
+                    <label for="quantity-tshirt">Qty:</label>
+                    <input type="number" id="quantity-tshirt" name="quantity" value="1" min="1">
+                </div>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+
+            <div class="product-card" data-id="2" data-name="Fence Jumpers Hoodie" data-price="65">
+                <img src="/FB_IMG_1751114658397.jpg" alt="Person wearing the Fence Jumpers Hoodie">
+                <h2>Fence Jumpers Hoodie</h2>
+                <p class="price">$65.00</p>
+                <div class="options">
+                    <label for="size-hoodie">Size:</label>
+                    <select id="size-hoodie" name="size">
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                    </select>
+                    <label for="quantity-hoodie">Qty:</label>
+                    <input type="number" id="quantity-hoodie" name="quantity" value="1" min="1">
+                </div>
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        </div>
+
+        <div id="cart">
+            <h2>Shopping Cart</h2>
+            <div id="cart-items">
+                <p>Your cart is empty.</p>
+            </div>
+            <div id="cart-total">
+                <p>Total: $<span id="total-price">0.00</span></p>
+            </div>
+            <button id="order-btn" disabled>Place Order via Email</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Fence Jumpers Metal Detecting. All rights reserved.</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
